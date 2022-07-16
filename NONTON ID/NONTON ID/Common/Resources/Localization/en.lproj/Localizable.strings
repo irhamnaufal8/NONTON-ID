@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  NONTON ID
+
+  Created by Garry on 16/07/22.
+  
+*/
+
+// MARK: - Login & Sign Up
+"tagline" = "Yuk, Nonton!";
+"email" = "Email";
+"password" = "Password";
+"login" = "Log in";
+"sign-up" = "Sign Up";
+"sign-up-question" = "Don't have account?";
+"login-question" = "Already have account?";
+
