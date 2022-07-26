@@ -15,3 +15,29 @@
 "sign-up-question" = "Don't have account?";
 "login-question" = "Already have account?";
 
+// MARK: - Home
+"home" = "Home";
+"trending-movie" = "Trending Movie";
+"trending-tv" = "Trending TV Series";
+
+// MARK: - Your List
+"your-list" = "Your List";
+"empty-list" = "Your list is empty.";
+"explore-movie" = "Explore Movie";
+"all" = "All";
+"movie" = "Movie";
+"tv" = "TV";
+
+// MARK: - Profile
+"profile" = "Profile";
+"log-out" = "Log Out";
+"log-out-main-question" = "Log Out form Account?";
+"log-out-description" = "You have to log in again to use NONTON ID.";
+"yes" = "Yes";
+"cancel" = "Cancel";
+"username" = "Username";
+"language" = "Language";
+"bahasa-indonesia" = "Bahasa Indonesia";
+"english" = "English";
+"dark-theme" = "Dark Theme";
+"settings" = "Settings";

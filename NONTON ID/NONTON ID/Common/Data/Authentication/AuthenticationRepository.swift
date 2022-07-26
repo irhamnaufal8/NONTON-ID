@@ -1,0 +1,14 @@
+//
+//  AuthenticationRepository.swift
+//  NONTON ID
+//
+//  Created by Garry on 20/07/22.
+
+
+import Foundation
+
+protocol AuthenticationRepository {
+    func provideCreateUser(with email: String, password: String) throws
+    func provideLoginUser(with email: String, password: String) throws
+    func provideStoreUserData(email: String, username: String) throws
+}

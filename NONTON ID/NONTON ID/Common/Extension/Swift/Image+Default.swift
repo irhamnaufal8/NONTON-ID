@@ -14,4 +14,5 @@ extension Image {
     
     // MARK: - Logo
     static let logoNontonID = Image("logo-nonton-id")
+    static let smallLogoNontonID = Image("small-logo-nonton-id")
 }

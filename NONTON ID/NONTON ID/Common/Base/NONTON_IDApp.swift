@@ -11,9 +11,18 @@ import Firebase
 @main
 struct NONTON_IDApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @AppStorage("loginStatus") var loginStatus = false
+    @AppStorage("isDarkMode") var isDarkMode = false
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ZStack {
+                if loginStatus {
+                    MainView()
+                } else {
+                    LoginView()
+                }
+            }
+            .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

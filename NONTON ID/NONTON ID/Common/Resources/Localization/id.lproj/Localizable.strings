@@ -15,3 +15,29 @@
 "sign-up-question" = "Belum mempunyari akun?";
 "login-question" = "Sudah mempunyai akun?";
 
+// MARK: - Home
+"home" = "Home";
+"trending-movie" = "Tren Film";
+"trending-tv" = "Tren Serial TV";
+
+// MARK: - Your List
+"your-list" = "List Kamu";
+"empty-list" = "List kamu kosong.";
+"explore-movie" = "Cari Film";
+"all" = "Semua";
+"movie" = "Movie";
+"tv" = "TV";
+
+// MARK: - Profile
+"profile" = "Profil";
+"log-out" = "Keluar";
+"log-out-main-question" = "Keluar dari akun?";
+"log-out-description" = "Kamu harus masuk kembali untuk menggunakan aplikasi NONTON ID.";
+"yes" = "Ya";
+"cancel" = "Batal";
+"username" = "Nama Pengguna";
+"language" = "Bahasa";
+"bahasa-indonesia" = "Bahasa Indonesia";
+"english" = "English";
+"dark-theme" = "Tema Gelap";
+"settings" = "Pengaturan";

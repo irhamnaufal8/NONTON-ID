@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61EDECE288E3E660043C902 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F61EDECD288E3E660043C902 /* SDWebImageSwiftUI */; };
+		F61EDED7288E55C20043C902 /* Zoomable in Frameworks */ = {isa = PBXBuildFile; productRef = F61EDED6288E55C20043C902 /* Zoomable */; };
+		F6645F78288D9106003A22BD /* TVSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F77288D9106003A22BD /* TVSeries.swift */; };
+		F6645F7B288D989C003A22BD /* TVData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6645F79288D989C003A22BD /* TVData.xcdatamodeld */; };
+		F6645F7E288D9F7D003A22BD /* TVPosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F7D288D9F7D003A22BD /* TVPosterView.swift */; };
+		F6645F80288D9FA1003A22BD /* TVPosterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F7F288D9FA1003A22BD /* TVPosterViewModel.swift */; };
+		F6645F82288DA260003A22BD /* TVCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F81288DA260003A22BD /* TVCardView.swift */; };
+		F6645F84288DA26E003A22BD /* TVCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F83288DA26E003A22BD /* TVCardViewModel.swift */; };
+		F6645F86288DC0F4003A22BD /* TrendingTVListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F85288DC0F3003A22BD /* TrendingTVListView.swift */; };
+		F6645F88288DC10F003A22BD /* TrendingTVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F87288DC10F003A22BD /* TrendingTVListViewModel.swift */; };
+		F6645F8A288DC2E3003A22BD /* TVDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F89288DC2E3003A22BD /* TVDetailView.swift */; };
+		F6645F8C288DC2F4003A22BD /* TVDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F8B288DC2F4003A22BD /* TVDetailViewModel.swift */; };
+		F675A367288BF64900836AAF /* YourListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675A366288BF64900836AAF /* YourListView.swift */; };
+		F675A36B288BFC0B00836AAF /* YourListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675A36A288BFC0B00836AAF /* YourListViewModel.swift */; };
+		F675A370288C068500836AAF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675A36F288C068500836AAF /* ProfileView.swift */; };
+		F675A372288C089A00836AAF /* EmptyYourListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675A371288C089A00836AAF /* EmptyYourListView.swift */; };
+		F675A377288C726300836AAF /* TrendingMovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675A376288C726300836AAF /* TrendingMovieListView.swift */; };
+		F675A379288C727600836AAF /* TrendingMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675A378288C727600836AAF /* TrendingMovieListViewModel.swift */; };
+		F675A37B288C7E2700836AAF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675A37A288C7E2700836AAF /* ProfileViewModel.swift */; };
+		F6A0DC51288F6986007342D0 /* FullImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0DC50288F6986007342D0 /* FullImage.swift */; };
+		F6A0DC56288F6C9E007342D0 /* SettingsLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0DC55288F6C9E007342D0 /* SettingsLanguageView.swift */; };
+		F6A0DC58288F6CBA007342D0 /* SettingsLanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0DC57288F6CBA007342D0 /* SettingsLanguageViewModel.swift */; };
+		F6A0DC5C288F917B007342D0 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0DC5B288F917B007342D0 /* LaunchScreenView.swift */; };
+		F6A0DC60288F94F8007342D0 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0DC5F288F94F8007342D0 /* LaunchScreenViewModel.swift */; };
 		F6A809F32882D0B2001449C1 /* NONTON_IDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A809F22882D0B2001449C1 /* NONTON_IDApp.swift */; };
 		F6A809FA2882D0B9001449C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A809F92882D0B9001449C1 /* Preview Assets.xcassets */; };
 		F6A80A0C2882D1AB001449C1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A80A0B2882D1AB001449C1 /* MainView.swift */; };
@@ -27,9 +51,66 @@
 		F6A80A372882FD44001449C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F6A80A362882FD44001449C1 /* FirebaseFirestore */; };
 		F6A80A392882FD44001449C1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F6A80A382882FD44001449C1 /* FirebaseStorage */; };
 		F6A80A3C2882FF27001449C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6A80A3B2882FF26001449C1 /* GoogleService-Info.plist */; };
+		F6A80A4228832722001449C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A80A4128832722001449C1 /* User.swift */; };
+		F6A80A4428832FB8001449C1 /* Encodable+toJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A80A4328832FB8001449C1 /* Encodable+toJSON.swift */; };
+		F6A80A4828833438001449C1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A80A4728833438001449C1 /* HomeViewModel.swift */; };
+		F6AFD3B52887AAF4003F4C62 /* AuthenticationRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3B42887AAF4003F4C62 /* AuthenticationRemoteDataSource.swift */; };
+		F6AFD3B72887ACC3003F4C62 /* AuthenticationDefaultRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3B62887ACC3003F4C62 /* AuthenticationDefaultRemoteDataSource.swift */; };
+		F6AFD3B92887AEB5003F4C62 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3B82887AEB5003F4C62 /* AuthenticationRepository.swift */; };
+		F6AFD3BB2887AF0D003F4C62 /* AuthenticationDefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3BA2887AF0D003F4C62 /* AuthenticationDefaultRepository.swift */; };
+		F6AFD3BD28880E6E003F4C62 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3BC28880E6E003F4C62 /* ImageLoader.swift */; };
+		F6AFD3C028880F82003F4C62 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3BF28880F82003F4C62 /* Movie.swift */; };
+		F6AFD3C328881189003F4C62 /* String+orEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3C128881189003F4C62 /* String+orEmpty.swift */; };
+		F6AFD3C428881189003F4C62 /* Int+orZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3C228881189003F4C62 /* Int+orZero.swift */; };
+		F6AFD3C728881AFB003F4C62 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3C628881AFB003F4C62 /* CombineMoya */; };
+		F6AFD3C928881AFB003F4C62 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3C828881AFB003F4C62 /* Moya */; };
+		F6AFD3CB28881AFB003F4C62 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3CA28881AFB003F4C62 /* ReactiveMoya */; };
+		F6AFD3CD28881AFB003F4C62 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3CC28881AFB003F4C62 /* RxMoya */; };
+		F6AFD3D028881B45003F4C62 /* MoyaProvider+RequestAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3CE28881B44003F4C62 /* MoyaProvider+RequestAsync.swift */; };
+		F6AFD3D128881B45003F4C62 /* MoyaProvider+DefaultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3CF28881B45003F4C62 /* MoyaProvider+DefaultProvider.swift */; };
+		F6AFD3D628881C56003F4C62 /* NontonIDTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3D528881C56003F4C62 /* NontonIDTargetType.swift */; };
+		F6AFD3DA28881DBD003F4C62 /* MovieTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3D928881DBD003F4C62 /* MovieTargetType.swift */; };
+		F6AFD3DC2888E62A003F4C62 /* MovieRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3DB2888E62A003F4C62 /* MovieRemoteDataSource.swift */; };
+		F6AFD3DE2888ECC0003F4C62 /* MovieDefaultRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3DD2888ECC0003F4C62 /* MovieDefaultRemoteDataSource.swift */; };
+		F6AFD3E028892506003F4C62 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3DF28892506003F4C62 /* MovieRepository.swift */; };
+		F6AFD3E228892544003F4C62 /* MovieDefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3E128892544003F4C62 /* MovieDefaultRepository.swift */; };
+		F6AFD3E42889276F003F4C62 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3E32889276F003F4C62 /* HomeView.swift */; };
+		F6AFD3EB28898A87003F4C62 /* MoviePosterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3EA28898A87003F4C62 /* MoviePosterViewModel.swift */; };
+		F6AFD3ED28898A9B003F4C62 /* MoviePosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3EC28898A9B003F4C62 /* MoviePosterView.swift */; };
+		F6AFD3F1288A04C2003F4C62 /* Presistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3F0288A04C2003F4C62 /* Presistance.swift */; };
+		F6AFD3F4288A0531003F4C62 /* MovieData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3F2288A0531003F4C62 /* MovieData.xcdatamodeld */; };
+		F6AFD3F6288A0635003F4C62 /* MovieLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3F5288A0635003F4C62 /* MovieLocalDataSource.swift */; };
+		F6AFD3F8288A074D003F4C62 /* MovieDefaultLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3F7288A074D003F4C62 /* MovieDefaultLocalDataSource.swift */; };
+		F6AFD3FD288A16F5003F4C62 /* MovieCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3FC288A16F5003F4C62 /* MovieCardViewModel.swift */; };
+		F6AFD3FF288A1703003F4C62 /* MovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3FE288A1703003F4C62 /* MovieCardView.swift */; };
+		F6AFD404288AB6B3003F4C62 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD403288AB6B3003F4C62 /* MovieDetailViewModel.swift */; };
+		F6AFD406288AB6C7003F4C62 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD405288AB6C7003F4C62 /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6645F77288D9106003A22BD /* TVSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeries.swift; sourceTree = "<group>"; };
+		F6645F7A288D989C003A22BD /* TVData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TVData.xcdatamodel; sourceTree = "<group>"; };
+		F6645F7D288D9F7D003A22BD /* TVPosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPosterView.swift; sourceTree = "<group>"; };
+		F6645F7F288D9FA1003A22BD /* TVPosterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPosterViewModel.swift; sourceTree = "<group>"; };
+		F6645F81288DA260003A22BD /* TVCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCardView.swift; sourceTree = "<group>"; };
+		F6645F83288DA26E003A22BD /* TVCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCardViewModel.swift; sourceTree = "<group>"; };
+		F6645F85288DC0F3003A22BD /* TrendingTVListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTVListView.swift; sourceTree = "<group>"; };
+		F6645F87288DC10F003A22BD /* TrendingTVListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTVListViewModel.swift; sourceTree = "<group>"; };
+		F6645F89288DC2E3003A22BD /* TVDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailView.swift; sourceTree = "<group>"; };
+		F6645F8B288DC2F4003A22BD /* TVDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailViewModel.swift; sourceTree = "<group>"; };
+		F675A366288BF64900836AAF /* YourListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourListView.swift; sourceTree = "<group>"; };
+		F675A36A288BFC0B00836AAF /* YourListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourListViewModel.swift; sourceTree = "<group>"; };
+		F675A36F288C068500836AAF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F675A371288C089A00836AAF /* EmptyYourListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyYourListView.swift; sourceTree = "<group>"; };
+		F675A376288C726300836AAF /* TrendingMovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovieListView.swift; sourceTree = "<group>"; };
+		F675A378288C727600836AAF /* TrendingMovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovieListViewModel.swift; sourceTree = "<group>"; };
+		F675A37A288C7E2700836AAF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F6A0DC50288F6986007342D0 /* FullImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImage.swift; sourceTree = "<group>"; };
+		F6A0DC55288F6C9E007342D0 /* SettingsLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLanguageView.swift; sourceTree = "<group>"; };
+		F6A0DC57288F6CBA007342D0 /* SettingsLanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLanguageViewModel.swift; sourceTree = "<group>"; };
+		F6A0DC59288F8DC1007342D0 /* NONTON-ID-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NONTON-ID-Info.plist"; path = "NONTON ID/Common/Info/NONTON-ID-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F6A0DC5B288F917B007342D0 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		F6A0DC5F288F94F8007342D0 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
 		F6A809EF2882D0B2001449C1 /* NONTON ID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NONTON ID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A809F22882D0B2001449C1 /* NONTON_IDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NONTON_IDApp.swift; sourceTree = "<group>"; };
 		F6A809F92882D0B9001449C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +130,36 @@
 		F6A80A2F2882DC52001449C1 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		F6A80A312882F7D9001449C1 /* View+hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+hideKeyboard.swift"; sourceTree = "<group>"; };
 		F6A80A3B2882FF26001449C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6A80A4128832722001449C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F6A80A4328832FB8001449C1 /* Encodable+toJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+toJSON.swift"; sourceTree = "<group>"; };
+		F6A80A4728833438001449C1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F6AFD3B42887AAF4003F4C62 /* AuthenticationRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRemoteDataSource.swift; sourceTree = "<group>"; };
+		F6AFD3B62887ACC3003F4C62 /* AuthenticationDefaultRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDefaultRemoteDataSource.swift; sourceTree = "<group>"; };
+		F6AFD3B82887AEB5003F4C62 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		F6AFD3BA2887AF0D003F4C62 /* AuthenticationDefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDefaultRepository.swift; sourceTree = "<group>"; };
+		F6AFD3BC28880E6E003F4C62 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F6AFD3BF28880F82003F4C62 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F6AFD3C128881189003F4C62 /* String+orEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+orEmpty.swift"; sourceTree = "<group>"; };
+		F6AFD3C228881189003F4C62 /* Int+orZero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+orZero.swift"; sourceTree = "<group>"; };
+		F6AFD3CE28881B44003F4C62 /* MoyaProvider+RequestAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+RequestAsync.swift"; sourceTree = "<group>"; };
+		F6AFD3CF28881B45003F4C62 /* MoyaProvider+DefaultProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+DefaultProvider.swift"; sourceTree = "<group>"; };
+		F6AFD3D528881C56003F4C62 /* NontonIDTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NontonIDTargetType.swift; sourceTree = "<group>"; };
+		F6AFD3D928881DBD003F4C62 /* MovieTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTargetType.swift; sourceTree = "<group>"; };
+		F6AFD3DB2888E62A003F4C62 /* MovieRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRemoteDataSource.swift; sourceTree = "<group>"; };
+		F6AFD3DD2888ECC0003F4C62 /* MovieDefaultRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDefaultRemoteDataSource.swift; sourceTree = "<group>"; };
+		F6AFD3DF28892506003F4C62 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		F6AFD3E128892544003F4C62 /* MovieDefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDefaultRepository.swift; sourceTree = "<group>"; };
+		F6AFD3E32889276F003F4C62 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F6AFD3EA28898A87003F4C62 /* MoviePosterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterViewModel.swift; sourceTree = "<group>"; };
+		F6AFD3EC28898A9B003F4C62 /* MoviePosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterView.swift; sourceTree = "<group>"; };
+		F6AFD3F0288A04C2003F4C62 /* Presistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presistance.swift; sourceTree = "<group>"; };
+		F6AFD3F3288A0531003F4C62 /* MovieData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieData.xcdatamodel; sourceTree = "<group>"; };
+		F6AFD3F5288A0635003F4C62 /* MovieLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLocalDataSource.swift; sourceTree = "<group>"; };
+		F6AFD3F7288A074D003F4C62 /* MovieDefaultLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDefaultLocalDataSource.swift; sourceTree = "<group>"; };
+		F6AFD3FC288A16F5003F4C62 /* MovieCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardViewModel.swift; sourceTree = "<group>"; };
+		F6AFD3FE288A1703003F4C62 /* MovieCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardView.swift; sourceTree = "<group>"; };
+		F6AFD403288AB6B3003F4C62 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		F6AFD405288AB6C7003F4C62 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +169,147 @@
 			files = (
 				F6A80A352882FD44001449C1 /* FirebaseAuth in Frameworks */,
 				F6A80A372882FD44001449C1 /* FirebaseFirestore in Frameworks */,
+				F6AFD3C728881AFB003F4C62 /* CombineMoya in Frameworks */,
+				F6AFD3C928881AFB003F4C62 /* Moya in Frameworks */,
+				F61EDECE288E3E660043C902 /* SDWebImageSwiftUI in Frameworks */,
+				F61EDED7288E55C20043C902 /* Zoomable in Frameworks */,
+				F6AFD3CD28881AFB003F4C62 /* RxMoya in Frameworks */,
 				F6A80A392882FD44001449C1 /* FirebaseStorage in Frameworks */,
+				F6AFD3CB28881AFB003F4C62 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F675A363288BF62A00836AAF /* YourList */ = {
+			isa = PBXGroup;
+			children = (
+				F675A365288BF63800836AAF /* View */,
+				F675A364288BF63100836AAF /* ViewModel */,
+			);
+			path = YourList;
+			sourceTree = "<group>";
+		};
+		F675A364288BF63100836AAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F675A36A288BFC0B00836AAF /* YourListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F675A365288BF63800836AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F675A366288BF64900836AAF /* YourListView.swift */,
+				F675A371288C089A00836AAF /* EmptyYourListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F675A36C288C066A00836AAF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F675A36E288C067600836AAF /* View */,
+				F675A36D288C067000836AAF /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F675A36D288C067000836AAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F675A37A288C7E2700836AAF /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F675A36E288C067600836AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F675A36F288C068500836AAF /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F675A373288C721300836AAF /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				F675A375288C724D00836AAF /* View */,
+				F675A374288C724700836AAF /* ViewModel */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		F675A374288C724700836AAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F675A378288C727600836AAF /* TrendingMovieListViewModel.swift */,
+				F6645F87288DC10F003A22BD /* TrendingTVListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F675A375288C724D00836AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F675A376288C726300836AAF /* TrendingMovieListView.swift */,
+				F6645F85288DC0F3003A22BD /* TrendingTVListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6A0DC52288F6C74007342D0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0DC53288F6C7B007342D0 /* View */,
+				F6A0DC54288F6C81007342D0 /* ViewModel */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F6A0DC53288F6C7B007342D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0DC55288F6C9E007342D0 /* SettingsLanguageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6A0DC54288F6C81007342D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0DC57288F6CBA007342D0 /* SettingsLanguageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6A0DC5A288F9160007342D0 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0DC5E288F94E7007342D0 /* ViewModel */,
+				F6A0DC5D288F94E2007342D0 /* View */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		F6A0DC5D288F94E2007342D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0DC5B288F917B007342D0 /* LaunchScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6A0DC5E288F94E7007342D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0DC5F288F94F8007342D0 /* LaunchScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F6A809E62882D0B2001449C1 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +355,7 @@
 		F6A80A012882D0EE001449C1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F6AFD3EF288A04AC003F4C62 /* LocalDB */,
 				F6A80A3A2882FE75001449C1 /* Info */,
 				F6A80A042882D130001449C1 /* Model */,
 				F6A80A052882D13C001449C1 /* Data */,
@@ -144,6 +390,9 @@
 		F6A80A042882D130001449C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6645F77288D9106003A22BD /* TVSeries.swift */,
+				F6AFD3BF28880F82003F4C62 /* Movie.swift */,
+				F6A80A4128832722001449C1 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +400,9 @@
 		F6A80A052882D13C001449C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F6AFD3D328881BE2003F4C62 /* Reusable */,
+				F6AFD3D228881BCB003F4C62 /* Movie+TVSeries */,
+				F6AFD3B22887AA5C003F4C62 /* Authentication */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -158,6 +410,10 @@
 		F6A80A062882D141001449C1 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				F6AFD3F9288A16C1003F4C62 /* Card */,
+				F6AFD3E728898A65003F4C62 /* Poster */,
+				F6AFD3BC28880E6E003F4C62 /* ImageLoader.swift */,
+				F6A0DC50288F6986007342D0 /* FullImage.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -177,7 +433,13 @@
 			isa = PBXGroup;
 			children = (
 				F6A80A0D2882D1CA001449C1 /* Login */,
+				F6A0DC52288F6C74007342D0 /* Settings */,
+				F675A36C288C066A00836AAF /* Profile */,
+				F675A363288BF62A00836AAF /* YourList */,
+				F675A373288C721300836AAF /* MovieList */,
+				F6AFD400288AB695003F4C62 /* MovieDetail */,
 				F6A80A092882D176001449C1 /* Home */,
+				F6A0DC5A288F9160007342D0 /* LaunchScreen */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -186,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A80A0A2882D194001449C1 /* View */,
+				F6A80A4628833429001449C1 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -194,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A80A0B2882D1AB001449C1 /* MainView.swift */,
+				F6AFD3E32889276F003F4C62 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,10 +498,13 @@
 		F6A80A252882D7C8001449C1 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F6AFD3C228881189003F4C62 /* Int+orZero.swift */,
+				F6AFD3C128881189003F4C62 /* String+orEmpty.swift */,
 				F6A80A2B2882D953001449C1 /* String+localized.swift */,
 				F6A80A272882D802001449C1 /* Color+Default.swift */,
 				F6A80A292882D8B4001449C1 /* Image+Default.swift */,
 				F6A80A312882F7D9001449C1 /* View+hideKeyboard.swift */,
+				F6A80A4328832FB8001449C1 /* Encodable+toJSON.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -245,6 +512,8 @@
 		F6A80A262882D7CF001449C1 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
+				F6AFD3CF28881B45003F4C62 /* MoyaProvider+DefaultProvider.swift */,
+				F6AFD3CE28881B44003F4C62 /* MoyaProvider+RequestAsync.swift */,
 			);
 			path = Moya;
 			sourceTree = "<group>";
@@ -252,9 +521,182 @@
 		F6A80A3A2882FE75001449C1 /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				F6A0DC59288F8DC1007342D0 /* NONTON-ID-Info.plist */,
 				F6A80A3B2882FF26001449C1 /* GoogleService-Info.plist */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		F6A80A4628833429001449C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6A80A4728833438001449C1 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6AFD3B22887AA5C003F4C62 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3B82887AEB5003F4C62 /* AuthenticationRepository.swift */,
+				F6AFD3BA2887AF0D003F4C62 /* AuthenticationDefaultRepository.swift */,
+				F6AFD3B32887AA76003F4C62 /* Remote */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F6AFD3B32887AA76003F4C62 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3B42887AAF4003F4C62 /* AuthenticationRemoteDataSource.swift */,
+				F6AFD3B62887ACC3003F4C62 /* AuthenticationDefaultRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		F6AFD3D228881BCB003F4C62 /* Movie+TVSeries */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3DF28892506003F4C62 /* MovieRepository.swift */,
+				F6AFD3E128892544003F4C62 /* MovieDefaultRepository.swift */,
+				F6AFD3EE288A0465003F4C62 /* Local */,
+				F6AFD3D728881D2A003F4C62 /* Remote */,
+			);
+			path = "Movie+TVSeries";
+			sourceTree = "<group>";
+		};
+		F6AFD3D328881BE2003F4C62 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3D428881BEF003F4C62 /* TargetType */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		F6AFD3D428881BEF003F4C62 /* TargetType */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3D528881C56003F4C62 /* NontonIDTargetType.swift */,
+			);
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+		F6AFD3D728881D2A003F4C62 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3DB2888E62A003F4C62 /* MovieRemoteDataSource.swift */,
+				F6AFD3DD2888ECC0003F4C62 /* MovieDefaultRemoteDataSource.swift */,
+				F6AFD3D828881D32003F4C62 /* TargetType */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		F6AFD3D828881D32003F4C62 /* TargetType */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3D928881DBD003F4C62 /* MovieTargetType.swift */,
+			);
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+		F6AFD3E728898A65003F4C62 /* Poster */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3E828898A6B003F4C62 /* View */,
+				F6AFD3E928898A71003F4C62 /* ViewModel */,
+			);
+			path = Poster;
+			sourceTree = "<group>";
+		};
+		F6AFD3E828898A6B003F4C62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3EC28898A9B003F4C62 /* MoviePosterView.swift */,
+				F6645F7D288D9F7D003A22BD /* TVPosterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6AFD3E928898A71003F4C62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3EA28898A87003F4C62 /* MoviePosterViewModel.swift */,
+				F6645F7F288D9FA1003A22BD /* TVPosterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6AFD3EE288A0465003F4C62 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3F5288A0635003F4C62 /* MovieLocalDataSource.swift */,
+				F6AFD3F7288A074D003F4C62 /* MovieDefaultLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		F6AFD3EF288A04AC003F4C62 /* LocalDB */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3F0288A04C2003F4C62 /* Presistance.swift */,
+				F6AFD3F2288A0531003F4C62 /* MovieData.xcdatamodeld */,
+				F6645F79288D989C003A22BD /* TVData.xcdatamodeld */,
+			);
+			path = LocalDB;
+			sourceTree = "<group>";
+		};
+		F6AFD3F9288A16C1003F4C62 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3FB288A16CE003F4C62 /* ViewModel */,
+				F6AFD3FA288A16C9003F4C62 /* View */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		F6AFD3FA288A16C9003F4C62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3FE288A1703003F4C62 /* MovieCardView.swift */,
+				F6645F81288DA260003A22BD /* TVCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6AFD3FB288A16CE003F4C62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD3FC288A16F5003F4C62 /* MovieCardViewModel.swift */,
+				F6645F83288DA26E003A22BD /* TVCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6AFD400288AB695003F4C62 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD402288AB6A2003F4C62 /* View */,
+				F6AFD401288AB69D003F4C62 /* ViewModel */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		F6AFD401288AB69D003F4C62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD403288AB6B3003F4C62 /* MovieDetailViewModel.swift */,
+				F6645F8B288DC2F4003A22BD /* TVDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6AFD402288AB6A2003F4C62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFD405288AB6C7003F4C62 /* MovieDetailView.swift */,
+				F6645F89288DC2E3003A22BD /* TVDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +719,12 @@
 				F6A80A342882FD44001449C1 /* FirebaseAuth */,
 				F6A80A362882FD44001449C1 /* FirebaseFirestore */,
 				F6A80A382882FD44001449C1 /* FirebaseStorage */,
+				F6AFD3C628881AFB003F4C62 /* CombineMoya */,
+				F6AFD3C828881AFB003F4C62 /* Moya */,
+				F6AFD3CA28881AFB003F4C62 /* ReactiveMoya */,
+				F6AFD3CC28881AFB003F4C62 /* RxMoya */,
+				F61EDECD288E3E660043C902 /* SDWebImageSwiftUI */,
+				F61EDED6288E55C20043C902 /* Zoomable */,
 			);
 			productName = "NONTON ID";
 			productReference = F6A809EF2882D0B2001449C1 /* NONTON ID.app */;
@@ -309,6 +757,9 @@
 			mainGroup = F6A809E62882D0B2001449C1;
 			packageReferences = (
 				F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */,
+				F61EDECC288E3E660043C902 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				F61EDED5288E55C20043C902 /* XCRemoteSwiftPackageReference "Zoomable" */,
 			);
 			productRefGroup = F6A809F02882D0B2001449C1 /* Products */;
 			projectDirPath = "";
@@ -340,17 +791,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AFD3D628881C56003F4C62 /* NontonIDTargetType.swift in Sources */,
 				F6A80A2A2882D8B4001449C1 /* Image+Default.swift in Sources */,
+				F6AFD3BB2887AF0D003F4C62 /* AuthenticationDefaultRepository.swift in Sources */,
 				F6A80A322882F7D9001449C1 /* View+hideKeyboard.swift in Sources */,
+				F6AFD3F8288A074D003F4C62 /* MovieDefaultLocalDataSource.swift in Sources */,
+				F6AFD3B92887AEB5003F4C62 /* AuthenticationRepository.swift in Sources */,
+				F6AFD3C428881189003F4C62 /* Int+orZero.swift in Sources */,
+				F6AFD3B72887ACC3003F4C62 /* AuthenticationDefaultRemoteDataSource.swift in Sources */,
+				F675A372288C089A00836AAF /* EmptyYourListView.swift in Sources */,
+				F6645F80288D9FA1003A22BD /* TVPosterViewModel.swift in Sources */,
+				F6AFD3E028892506003F4C62 /* MovieRepository.swift in Sources */,
+				F6AFD3FD288A16F5003F4C62 /* MovieCardViewModel.swift in Sources */,
+				F6645F78288D9106003A22BD /* TVSeries.swift in Sources */,
+				F6645F88288DC10F003A22BD /* TrendingTVListViewModel.swift in Sources */,
+				F6AFD3E228892544003F4C62 /* MovieDefaultRepository.swift in Sources */,
+				F6AFD3DA28881DBD003F4C62 /* MovieTargetType.swift in Sources */,
 				F6A80A162882D297001449C1 /* LocalizationService.swift in Sources */,
 				F6A80A2C2882D953001449C1 /* String+localized.swift in Sources */,
+				F6A80A4228832722001449C1 /* User.swift in Sources */,
+				F6645F86288DC0F4003A22BD /* TrendingTVListView.swift in Sources */,
+				F6AFD3F1288A04C2003F4C62 /* Presistance.swift in Sources */,
+				F675A367288BF64900836AAF /* YourListView.swift in Sources */,
+				F6AFD3ED28898A9B003F4C62 /* MoviePosterView.swift in Sources */,
+				F675A370288C068500836AAF /* ProfileView.swift in Sources */,
+				F6645F7B288D989C003A22BD /* TVData.xcdatamodeld in Sources */,
+				F6A0DC56288F6C9E007342D0 /* SettingsLanguageView.swift in Sources */,
 				F6A80A102882D1EF001449C1 /* LoginView.swift in Sources */,
+				F6AFD3BD28880E6E003F4C62 /* ImageLoader.swift in Sources */,
+				F6AFD3FF288A1703003F4C62 /* MovieCardView.swift in Sources */,
+				F6A0DC60288F94F8007342D0 /* LaunchScreenViewModel.swift in Sources */,
+				F6AFD3C328881189003F4C62 /* String+orEmpty.swift in Sources */,
+				F6AFD3E42889276F003F4C62 /* HomeView.swift in Sources */,
+				F6645F8A288DC2E3003A22BD /* TVDetailView.swift in Sources */,
 				F6A80A182882D297001449C1 /* LanguageEnum.swift in Sources */,
+				F6AFD3D128881B45003F4C62 /* MoyaProvider+DefaultProvider.swift in Sources */,
+				F6A0DC58288F6CBA007342D0 /* SettingsLanguageViewModel.swift in Sources */,
 				F6A809F32882D0B2001449C1 /* NONTON_IDApp.swift in Sources */,
 				F6A80A0C2882D1AB001449C1 /* MainView.swift in Sources */,
+				F6AFD3D028881B45003F4C62 /* MoyaProvider+RequestAsync.swift in Sources */,
+				F675A37B288C7E2700836AAF /* ProfileViewModel.swift in Sources */,
+				F6A80A4828833438001449C1 /* HomeViewModel.swift in Sources */,
+				F6AFD3C028880F82003F4C62 /* Movie.swift in Sources */,
 				F6A80A282882D802001449C1 /* Color+Default.swift in Sources */,
+				F6AFD3F6288A0635003F4C62 /* MovieLocalDataSource.swift in Sources */,
+				F6645F8C288DC2F4003A22BD /* TVDetailViewModel.swift in Sources */,
+				F6AFD3B52887AAF4003F4C62 /* AuthenticationRemoteDataSource.swift in Sources */,
+				F6A0DC51288F6986007342D0 /* FullImage.swift in Sources */,
+				F675A36B288BFC0B00836AAF /* YourListViewModel.swift in Sources */,
+				F6645F82288DA260003A22BD /* TVCardView.swift in Sources */,
+				F675A377288C726300836AAF /* TrendingMovieListView.swift in Sources */,
+				F6AFD3DC2888E62A003F4C62 /* MovieRemoteDataSource.swift in Sources */,
+				F6A0DC5C288F917B007342D0 /* LaunchScreenView.swift in Sources */,
+				F675A379288C727600836AAF /* TrendingMovieListViewModel.swift in Sources */,
+				F6AFD406288AB6C7003F4C62 /* MovieDetailView.swift in Sources */,
 				F6A80A172882D297001449C1 /* LocalizableText.swift in Sources */,
+				F6645F84288DA26E003A22BD /* TVCardViewModel.swift in Sources */,
+				F6645F7E288D9F7D003A22BD /* TVPosterView.swift in Sources */,
+				F6AFD3DE2888ECC0003F4C62 /* MovieDefaultRemoteDataSource.swift in Sources */,
 				F6A80A242882D74D001449C1 /* LoginViewModel.swift in Sources */,
+				F6AFD404288AB6B3003F4C62 /* MovieDetailViewModel.swift in Sources */,
+				F6AFD3EB28898A87003F4C62 /* MoviePosterViewModel.swift in Sources */,
+				F6A80A4428832FB8001449C1 /* Encodable+toJSON.swift in Sources */,
+				F6AFD3F4288A0531003F4C62 /* MovieData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,9 +997,10 @@
 				DEVELOPMENT_TEAM = 39B633LG23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NONTON-ID-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,9 +1027,10 @@
 				DEVELOPMENT_TEAM = 39B633LG23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NONTON-ID-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,6 +1070,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F61EDECC288E3E660043C902 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F61EDED5288E55C20043C902 /* XCRemoteSwiftPackageReference "Zoomable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jasudev/Zoomable.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -573,9 +1094,27 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F61EDECD288E3E660043C902 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61EDECC288E3E660043C902 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		F61EDED6288E55C20043C902 /* Zoomable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61EDED5288E55C20043C902 /* XCRemoteSwiftPackageReference "Zoomable" */;
+			productName = Zoomable;
+		};
 		F6A80A342882FD44001449C1 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -591,7 +1130,50 @@
 			package = F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
+		F6AFD3C628881AFB003F4C62 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		F6AFD3C828881AFB003F4C62 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		F6AFD3CA28881AFB003F4C62 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		F6AFD3CC28881AFB003F4C62 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F6645F79288D989C003A22BD /* TVData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6645F7A288D989C003A22BD /* TVData.xcdatamodel */,
+			);
+			currentVersion = F6645F7A288D989C003A22BD /* TVData.xcdatamodel */;
+			path = TVData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		F6AFD3F2288A0531003F4C62 /* MovieData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6AFD3F3288A0531003F4C62 /* MovieData.xcdatamodel */,
+			);
+			currentVersion = F6AFD3F3288A0531003F4C62 /* MovieData.xcdatamodel */;
+			path = MovieData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F6A809E72882D0B2001449C1 /* Project object */;
 }

@@ -17,4 +17,13 @@ extension Color {
     // MARK: - Component Color
     static let primaryBackground = Color("primary-background")
     static let primaryText = Color("primary-text")
+    static let loadingImage = Color("loading-image")
+    static let secondaryBackground = Color("secondary-background")
+}
+
+extension LinearGradient {
+    static let gradient = LinearGradient(colors: [Color.purple, Color.pink], startPoint: .topLeading, endPoint: .bottomTrailing)
+    static let gray = LinearGradient(colors: [Color.gray, Color.gray], startPoint: .topLeading, endPoint: .bottomTrailing)
+    static let background = LinearGradient(colors: [Color.primaryBackground, Color.secondaryBackground], startPoint: .topLeading, endPoint: .bottomTrailing)
+    static let innerShadow = LinearGradient(colors: [Color.black.opacity(0), Color.black.opacity(0.8) ], startPoint: .top, endPoint: .bottom)
 }
