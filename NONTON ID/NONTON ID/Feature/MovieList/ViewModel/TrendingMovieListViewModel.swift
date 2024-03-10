@@ -37,9 +37,7 @@ final class TrendingMovieListViewModel: ObservableObject {
             if isEmptyOnLocal {
                 await getTrendingMovie()
             }
-//            await deleteItem()
             await loadLocalTrendingMovie()
-//            print(trendingMovie)
         }
     }
     
@@ -92,17 +90,7 @@ final class TrendingMovieListViewModel: ObservableObject {
             return false
         }
     }
-    
-    func deleteItem() async {
-        do {
-            try movieRepository.provideDeleteLocalItem()
-        } catch {
-            self.isLoading = false
-            self.isError = true
-            self.errorMessage = error.localizedDescription
-        }
-    }
-    
+
     func posterSize() -> CGFloat {
         let width = (UIScreen.main.bounds.width / 3) - 20
         return width

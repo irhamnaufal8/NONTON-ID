@@ -37,9 +37,7 @@ final class TrendingTVListViewModel: ObservableObject {
             if isEmptyOnLocal {
                 await getTrendingTV()
             }
-//            await deleteItem()
             await loadLocalTrendingTV()
-//            print(trendingMovie)
         }
     }
     
@@ -90,16 +88,6 @@ final class TrendingTVListViewModel: ObservableObject {
             
         } catch {
             return false
-        }
-    }
-    
-    func deleteItem() async {
-        do {
-            try tvRepository.provideDeleteLocalTV()
-        } catch {
-            self.isLoading = false
-            self.isError = true
-            self.errorMessage = error.localizedDescription
         }
     }
     

@@ -10,6 +10,9 @@ import Moya
 
 extension MoyaProvider {
     static func defaultProvider() -> MoyaProvider {
-        return MoyaProvider(plugins: [NetworkLoggerPlugin()])
+        let accessTokenPlugin = AccessTokenPlugin { _ in
+            Constants.accesToken
+        }
+        return MoyaProvider(plugins: [NetworkLoggerPlugin(), accessTokenPlugin])
     }
 }

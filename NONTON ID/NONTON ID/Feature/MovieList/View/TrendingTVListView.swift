@@ -12,15 +12,13 @@ struct TrendingTVListView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: viewModel.posterSize()))]) {
-                if let data = viewModel.trendingTV{
-                    ForEach(data, id:\.id) { item in
-                        NavigationLink(destination: {
-                            TVDetailView(viewModel: TVDetailViewModel(tv: item))
-                        }) {
-                            TVPosterView(
-                                viewModel: TVPosterViewModel(tv: item)
-                            )
-                        }
+                ForEach(viewModel.trendingTV, id:\.id) { item in
+                    NavigationLink(destination: {
+                        TVDetailView(viewModel: TVDetailViewModel(tv: item))
+                    }) {
+                        TVPosterView(
+                            viewModel: TVPosterViewModel(tv: item)
+                        )
                     }
                 }
             }

@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F61EDECE288E3E660043C902 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F61EDECD288E3E660043C902 /* SDWebImageSwiftUI */; };
-		F61EDED7288E55C20043C902 /* Zoomable in Frameworks */ = {isa = PBXBuildFile; productRef = F61EDED6288E55C20043C902 /* Zoomable */; };
+		4B7220FA2B9E159E00E19AA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7220F92B9E159E00E19AA5 /* Constants.swift */; };
+		4B7220FD2B9E1F3D00E19AA5 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7220FC2B9E1F3D00E19AA5 /* CombineMoya */; };
+		4B7220FF2B9E1F3D00E19AA5 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7220FE2B9E1F3D00E19AA5 /* Moya */; };
+		4B7221012B9E1F3D00E19AA5 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7221002B9E1F3D00E19AA5 /* ReactiveMoya */; };
+		4B7221032B9E1F3D00E19AA5 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7221022B9E1F3D00E19AA5 /* RxMoya */; };
+		4B7221062B9E202800E19AA5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7221052B9E202800E19AA5 /* FirebaseAuth */; };
+		4B7221092B9E215300E19AA5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7221082B9E215300E19AA5 /* FirebaseFirestore */; };
 		F6645F78288D9106003A22BD /* TVSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F77288D9106003A22BD /* TVSeries.swift */; };
 		F6645F7B288D989C003A22BD /* TVData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6645F79288D989C003A22BD /* TVData.xcdatamodeld */; };
 		F6645F7E288D9F7D003A22BD /* TVPosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F7D288D9F7D003A22BD /* TVPosterView.swift */; };
@@ -47,9 +52,6 @@
 		F6A80A2E2882DB8C001449C1 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A80A2D2882DB8C001449C1 /* Image.xcassets */; };
 		F6A80A302882DC52001449C1 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A80A2F2882DC52001449C1 /* AppIcon.xcassets */; };
 		F6A80A322882F7D9001449C1 /* View+hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A80A312882F7D9001449C1 /* View+hideKeyboard.swift */; };
-		F6A80A352882FD44001449C1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F6A80A342882FD44001449C1 /* FirebaseAuth */; };
-		F6A80A372882FD44001449C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F6A80A362882FD44001449C1 /* FirebaseFirestore */; };
-		F6A80A392882FD44001449C1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F6A80A382882FD44001449C1 /* FirebaseStorage */; };
 		F6A80A3C2882FF27001449C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6A80A3B2882FF26001449C1 /* GoogleService-Info.plist */; };
 		F6A80A4228832722001449C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A80A4128832722001449C1 /* User.swift */; };
 		F6A80A4428832FB8001449C1 /* Encodable+toJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A80A4328832FB8001449C1 /* Encodable+toJSON.swift */; };
@@ -62,10 +64,6 @@
 		F6AFD3C028880F82003F4C62 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3BF28880F82003F4C62 /* Movie.swift */; };
 		F6AFD3C328881189003F4C62 /* String+orEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3C128881189003F4C62 /* String+orEmpty.swift */; };
 		F6AFD3C428881189003F4C62 /* Int+orZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3C228881189003F4C62 /* Int+orZero.swift */; };
-		F6AFD3C728881AFB003F4C62 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3C628881AFB003F4C62 /* CombineMoya */; };
-		F6AFD3C928881AFB003F4C62 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3C828881AFB003F4C62 /* Moya */; };
-		F6AFD3CB28881AFB003F4C62 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3CA28881AFB003F4C62 /* ReactiveMoya */; };
-		F6AFD3CD28881AFB003F4C62 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F6AFD3CC28881AFB003F4C62 /* RxMoya */; };
 		F6AFD3D028881B45003F4C62 /* MoyaProvider+RequestAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3CE28881B44003F4C62 /* MoyaProvider+RequestAsync.swift */; };
 		F6AFD3D128881B45003F4C62 /* MoyaProvider+DefaultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3CF28881B45003F4C62 /* MoyaProvider+DefaultProvider.swift */; };
 		F6AFD3D628881C56003F4C62 /* NontonIDTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFD3D528881C56003F4C62 /* NontonIDTargetType.swift */; };
@@ -88,6 +86,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B7220F92B9E159E00E19AA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F6645F77288D9106003A22BD /* TVSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeries.swift; sourceTree = "<group>"; };
 		F6645F7A288D989C003A22BD /* TVData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TVData.xcdatamodel; sourceTree = "<group>"; };
 		F6645F7D288D9F7D003A22BD /* TVPosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPosterView.swift; sourceTree = "<group>"; };
@@ -167,21 +166,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A80A352882FD44001449C1 /* FirebaseAuth in Frameworks */,
-				F6A80A372882FD44001449C1 /* FirebaseFirestore in Frameworks */,
-				F6AFD3C728881AFB003F4C62 /* CombineMoya in Frameworks */,
-				F6AFD3C928881AFB003F4C62 /* Moya in Frameworks */,
-				F61EDECE288E3E660043C902 /* SDWebImageSwiftUI in Frameworks */,
-				F61EDED7288E55C20043C902 /* Zoomable in Frameworks */,
-				F6AFD3CD28881AFB003F4C62 /* RxMoya in Frameworks */,
-				F6A80A392882FD44001449C1 /* FirebaseStorage in Frameworks */,
-				F6AFD3CB28881AFB003F4C62 /* ReactiveMoya in Frameworks */,
+				4B7220FF2B9E1F3D00E19AA5 /* Moya in Frameworks */,
+				4B7221062B9E202800E19AA5 /* FirebaseAuth in Frameworks */,
+				4B7220FD2B9E1F3D00E19AA5 /* CombineMoya in Frameworks */,
+				4B7221032B9E1F3D00E19AA5 /* RxMoya in Frameworks */,
+				4B7221012B9E1F3D00E19AA5 /* ReactiveMoya in Frameworks */,
+				4B7221092B9E215300E19AA5 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B7221072B9E215300E19AA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F675A363288BF62A00836AAF /* YourList */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +318,7 @@
 			children = (
 				F6A809F12882D0B2001449C1 /* NONTON ID */,
 				F6A809F02882D0B2001449C1 /* Products */,
+				4B7221072B9E215300E19AA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A809F22882D0B2001449C1 /* NONTON_IDApp.swift */,
+				4B7220F92B9E159E00E19AA5 /* Constants.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -361,7 +366,6 @@
 				F6A80A052882D13C001449C1 /* Data */,
 				F6A80A032882D12A001449C1 /* Extension */,
 				F6A80A062882D141001449C1 /* Component */,
-				F6A80A022882D106001449C1 /* Assets */,
 				F6A80A072882D148001449C1 /* Resources */,
 				F6A80A002882D0E8001449C1 /* Base */,
 			);
@@ -421,9 +425,7 @@
 		F6A80A072882D148001449C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F6A80A152882D297001449C1 /* LanguageEnum.swift */,
-				F6A80A142882D297001449C1 /* LocalizableText.swift */,
-				F6A80A132882D297001449C1 /* LocalizationService.swift */,
+				F6A80A022882D106001449C1 /* Assets */,
 				F6A80A1F2882D2F8001449C1 /* Localization */,
 			);
 			path = Resources;
@@ -482,6 +484,9 @@
 		F6A80A1F2882D2F8001449C1 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				F6A80A152882D297001449C1 /* LanguageEnum.swift */,
+				F6A80A142882D297001449C1 /* LocalizableText.swift */,
+				F6A80A132882D297001449C1 /* LocalizationService.swift */,
 				F6A80A1D2882D2D0001449C1 /* Localizable.strings */,
 			);
 			path = Localization;
@@ -716,15 +721,12 @@
 			);
 			name = "NONTON ID";
 			packageProductDependencies = (
-				F6A80A342882FD44001449C1 /* FirebaseAuth */,
-				F6A80A362882FD44001449C1 /* FirebaseFirestore */,
-				F6A80A382882FD44001449C1 /* FirebaseStorage */,
-				F6AFD3C628881AFB003F4C62 /* CombineMoya */,
-				F6AFD3C828881AFB003F4C62 /* Moya */,
-				F6AFD3CA28881AFB003F4C62 /* ReactiveMoya */,
-				F6AFD3CC28881AFB003F4C62 /* RxMoya */,
-				F61EDECD288E3E660043C902 /* SDWebImageSwiftUI */,
-				F61EDED6288E55C20043C902 /* Zoomable */,
+				4B7220FC2B9E1F3D00E19AA5 /* CombineMoya */,
+				4B7220FE2B9E1F3D00E19AA5 /* Moya */,
+				4B7221002B9E1F3D00E19AA5 /* ReactiveMoya */,
+				4B7221022B9E1F3D00E19AA5 /* RxMoya */,
+				4B7221052B9E202800E19AA5 /* FirebaseAuth */,
+				4B7221082B9E215300E19AA5 /* FirebaseFirestore */,
 			);
 			productName = "NONTON ID";
 			productReference = F6A809EF2882D0B2001449C1 /* NONTON ID.app */;
@@ -738,7 +740,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					F6A809EE2882D0B2001449C1 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -756,10 +758,8 @@
 			);
 			mainGroup = F6A809E62882D0B2001449C1;
 			packageReferences = (
-				F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */,
-				F61EDECC288E3E660043C902 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				F61EDED5288E55C20043C902 /* XCRemoteSwiftPackageReference "Zoomable" */,
+				4B7220FB2B9E1F3D00E19AA5 /* XCRemoteSwiftPackageReference "Moya" */,
+				4B7221042B9E202800E19AA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F6A809F02882D0B2001449C1 /* Products */;
 			projectDirPath = "";
@@ -830,6 +830,7 @@
 				F6A809F32882D0B2001449C1 /* NONTON_IDApp.swift in Sources */,
 				F6A80A0C2882D1AB001449C1 /* MainView.swift in Sources */,
 				F6AFD3D028881B45003F4C62 /* MoyaProvider+RequestAsync.swift in Sources */,
+				4B7220FA2B9E159E00E19AA5 /* Constants.swift in Sources */,
 				F675A37B288C7E2700836AAF /* ProfileViewModel.swift in Sources */,
 				F6A80A4828833438001449C1 /* HomeViewModel.swift in Sources */,
 				F6AFD3C028880F82003F4C62 /* Movie.swift in Sources */,
@@ -876,6 +877,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -908,6 +910,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -936,6 +939,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -968,6 +972,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1070,85 +1075,54 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F61EDECC288E3E660043C902 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F61EDED5288E55C20043C902 /* XCRemoteSwiftPackageReference "Zoomable" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jasudev/Zoomable.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-		F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		4B7220FB2B9E1F3D00E19AA5 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		4B7221042B9E202800E19AA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F61EDECD288E3E660043C902 /* SDWebImageSwiftUI */ = {
+		4B7220FC2B9E1F3D00E19AA5 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F61EDECC288E3E660043C902 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-		F61EDED6288E55C20043C902 /* Zoomable */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F61EDED5288E55C20043C902 /* XCRemoteSwiftPackageReference "Zoomable" */;
-			productName = Zoomable;
-		};
-		F6A80A342882FD44001449C1 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		F6A80A362882FD44001449C1 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		F6A80A382882FD44001449C1 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6A80A332882FD44001449C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		F6AFD3C628881AFB003F4C62 /* CombineMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 4B7220FB2B9E1F3D00E19AA5 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
-		F6AFD3C828881AFB003F4C62 /* Moya */ = {
+		4B7220FE2B9E1F3D00E19AA5 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 4B7220FB2B9E1F3D00E19AA5 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
-		F6AFD3CA28881AFB003F4C62 /* ReactiveMoya */ = {
+		4B7221002B9E1F3D00E19AA5 /* ReactiveMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 4B7220FB2B9E1F3D00E19AA5 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = ReactiveMoya;
 		};
-		F6AFD3CC28881AFB003F4C62 /* RxMoya */ = {
+		4B7221022B9E1F3D00E19AA5 /* RxMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F6AFD3C528881AFB003F4C62 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 4B7220FB2B9E1F3D00E19AA5 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		4B7221052B9E202800E19AA5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B7221042B9E202800E19AA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4B7221082B9E215300E19AA5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B7221042B9E202800E19AA5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 

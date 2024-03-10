@@ -14,17 +14,18 @@ enum MovieTargetType {
     case getTrendingTVSeries
 }
 
-extension MovieTargetType: NontonIDTargetType {
+extension MovieTargetType: NontonIDTargetType, AccessTokenAuthorizable {
+    var authorizationType: Moya.AuthorizationType? {
+        return .bearer
+    }
+    
     var parameters: [String : Any] {
-        let apiKey: String = "35085a91df1b7d52c276b7f1f1848e60"
-        return ["api_key": "\(apiKey)"]
+        return [:]
     }
     
     var parameterEncoding: Moya.ParameterEncoding {
         URLEncoding.default
     }
-    
-    
     
     var task: Task {
         return .requestParameters(parameters: parameters, encoding: parameterEncoding)

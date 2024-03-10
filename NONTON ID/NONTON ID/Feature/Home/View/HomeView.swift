@@ -45,17 +45,15 @@ struct HomeView: View {
                         
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
-                                if let data = viewModel.trendingMovie{
-                                    ForEach(data, id:\.id) { item in
-                                        NavigationLink(destination: {
-                                            MovieDetailView(
-                                                viewModel: MovieDetailViewModel(movie: item)
-                                            )
-                                        }) {
-                                            MoviePosterView(
-                                                viewModel: MoviePosterViewModel(movie: item)
-                                            )
-                                        }
+                                ForEach(viewModel.trendingMovie, id:\.id) { item in
+                                    NavigationLink(destination: {
+                                        MovieDetailView(
+                                            viewModel: MovieDetailViewModel(movie: item)
+                                        )
+                                    }) {
+                                        MoviePosterView(
+                                            viewModel: MoviePosterViewModel(movie: item)
+                                        )
                                     }
                                 }
                             }
@@ -82,13 +80,11 @@ struct HomeView: View {
 
                         
                         LazyVGrid(columns: [GridItem(.adaptive(minimum: viewModel.posterSize()))]) {
-                            if let data = viewModel.trendingTV{
-                                ForEach(data, id:\.id) { item in
-                                    NavigationLink(destination: {
-                                        TVDetailView(viewModel: TVDetailViewModel(tv: item))
-                                    }) {
-                                        TVPosterView(viewModel: TVPosterViewModel(tv: item))
-                                    }
+                            ForEach(viewModel.trendingTV, id:\.id) { item in
+                                NavigationLink(destination: {
+                                    TVDetailView(viewModel: TVDetailViewModel(tv: item))
+                                }) {
+                                    TVPosterView(viewModel: TVPosterViewModel(tv: item))
                                 }
                             }
                         }

@@ -43,7 +43,9 @@ final class HomeViewModel: ObservableObject {
             if isTvLocalEmpty {
                 await getTrendingTV()
             }
-//            await deleteItem()
+            
+            //            await deleteItem()
+            
             await loadLocalTrendingMovie()
             await loadLocalTrendingTV()
         }

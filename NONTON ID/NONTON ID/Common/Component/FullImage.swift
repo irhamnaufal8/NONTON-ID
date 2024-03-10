@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Zoomable
 
 struct FullImage: View {
     @Environment(\.presentationMode) var presentationMode
@@ -14,13 +13,7 @@ struct FullImage: View {
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            ZoomableImageView(
-                url: URL(string: url)!,
-                min: 1.0, max: 3.0,
-                showsIndicators: false
-            ) {
-                Text("")
-            }
+            ImageLoader(url: url)
             
             Button {
                 presentationMode.wrappedValue.dismiss()

@@ -72,53 +72,45 @@ struct YourListView: View {
                             
                             switch viewModel.currentFilter {
                             case .all:
-                                if let data = viewModel.movieData {
-                                    ForEach(data, id:\.id) { item in
-                                        NavigationLink(destination: {
-                                            MovieDetailView(
-                                                viewModel: MovieDetailViewModel(movie: item)
-                                            )
-                                        }) {
-                                            MovieCardView(viewModel: MovieCardViewModel(movie: item))
-                                        }
+                                ForEach(viewModel.movieData, id:\.id) { item in
+                                    NavigationLink(destination: {
+                                        MovieDetailView(
+                                            viewModel: MovieDetailViewModel(movie: item)
+                                        )
+                                    }) {
+                                        MovieCardView(viewModel: MovieCardViewModel(movie: item))
                                     }
                                 }
                                 
-                                if let data = viewModel.tvData {
-                                    ForEach(data, id:\.id) { item in
-                                        NavigationLink(destination: {
-                                            TVDetailView(
-                                                viewModel: TVDetailViewModel(tv: item)
-                                            )
-                                        }) {
-                                            TVCardView(viewModel: TVCardViewModel(tv: item))
-                                        }
+                                ForEach(viewModel.tvData, id:\.id) { item in
+                                    NavigationLink(destination: {
+                                        TVDetailView(
+                                            viewModel: TVDetailViewModel(tv: item)
+                                        )
+                                    }) {
+                                        TVCardView(viewModel: TVCardViewModel(tv: item))
                                     }
                                 }
                                 
                             case.movie:
-                                if let data = viewModel.movieData {
-                                    ForEach(data, id:\.id) { item in
-                                        NavigationLink(destination: {
-                                            MovieDetailView(
-                                                viewModel: MovieDetailViewModel(movie: item)
-                                            )
-                                        }) {
-                                            MovieCardView(viewModel: MovieCardViewModel(movie: item))
-                                        }
+                                ForEach(viewModel.movieData, id:\.id) { item in
+                                    NavigationLink(destination: {
+                                        MovieDetailView(
+                                            viewModel: MovieDetailViewModel(movie: item)
+                                        )
+                                    }) {
+                                        MovieCardView(viewModel: MovieCardViewModel(movie: item))
                                     }
                                 }
                                 
                             case.tv:
-                                if let data = viewModel.tvData {
-                                    ForEach(data, id:\.id) { item in
-                                        NavigationLink(destination: {
-                                            TVDetailView(
-                                                viewModel: TVDetailViewModel(tv: item)
-                                            )
-                                        }) {
-                                            TVCardView(viewModel: TVCardViewModel(tv: item))
-                                        }
+                                ForEach(viewModel.tvData, id:\.id) { item in
+                                    NavigationLink(destination: {
+                                        TVDetailView(
+                                            viewModel: TVDetailViewModel(tv: item)
+                                        )
+                                    }) {
+                                        TVCardView(viewModel: TVCardViewModel(tv: item))
                                     }
                                 }
                             }
