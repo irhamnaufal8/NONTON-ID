@@ -8,9 +8,9 @@
 import Foundation
 
 protocol MovieRepository {
-    func provideGetTrendingMovie() async throws -> TrendingMovie
+    func provideGetTrendingMovie() async throws -> ArrayResult<Movie>
     func provideGetMovieDetail(by movieId: Int) async throws -> Movie
-    func provideGetTrendingTVSeries() async throws -> TrendingTV
+    func provideGetTrendingTVSeries() async throws -> ArrayResult<TVSeries>
     func provideSaveToLocalMovieList(by movie: Movie) throws
     func provideLoadLocalMovie() async throws -> [MovieData]
     func provideDeleteLocalItem() throws

@@ -7,11 +7,7 @@
 
 import Foundation
 
-struct TrendingMovie: Codable {
-    let results: [Movie]?
-}
-
-struct Movie: Codable, Hashable {
+struct Movie: Identifiable, Codable, Hashable {
     let id: Int?
     let originalTitle: String?
     let overview: String?

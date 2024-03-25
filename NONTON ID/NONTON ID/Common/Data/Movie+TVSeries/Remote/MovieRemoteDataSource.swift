@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MovieRemoteDataSource {
-    func getTrendingMovie() async throws -> TrendingMovie
+    func getTrendingMovie() async throws -> ArrayResult<Movie>
     func getMovieDetail(by movieId: Int) async throws -> Movie
-    func getTrendingTVSeries() async throws -> TrendingTV
+    func getTrendingTVSeries() async throws -> ArrayResult<TVSeries>
 }

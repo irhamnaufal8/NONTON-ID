@@ -5,9 +5,7 @@
 //  Created by Garry on 16/07/22.
 //
 
-import Foundation
 import SwiftUI
-import Firebase
 
 final class LoginViewModel: ObservableObject {
     
@@ -48,98 +46,35 @@ final class LoginViewModel: ObservableObject {
     }
     
     func createAccount() {
-//        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-//            if let error = error {
-//                self.isError = true
-//                self.errorMessage = error.localizedDescription
-//                print(self.errorMessage)
-//                return
-//            }
-//
-//            self.isError = false
-//            self.storeUserData()
-//            self.loginUser()
-//
-//        }
-        
-        do {
-            try authenticationRepository.provideCreateUser(with: self.email, password: self.password)
-
+        authenticationRepository.provideCreateUser(with: email, password: password) { [weak self] error in
             DispatchQueue.main.async { [weak self] in
                 self?.isError = false
                 self?.storeUserData()
                 self?.loginUser()
-            }
-
-        } catch {
-            DispatchQueue.main.async { [weak self] in
                 self?.isError = true
-                self?.errorMessage = error.localizedDescription
+                self?.errorMessage = (error?.localizedDescription).orEmpty()
             }
         }
     }
     
     func loginUser() {
-//        Auth.auth().signIn(withEmail: email, password: password) { result, error in
-//            if let error = error {
-//                self.isError = true
-//                self.errorMessage = error.localizedDescription
-//                print(self.errorMessage)
-//                return
-//            }
-//
-//            self.isError = false
-//            self.errorMessage = "Successfully log in as user: \(result?.user.uid ?? "")"
-//            print(self.errorMessage)
-//
-//            withAnimation {
-//                self.loginStatus = true
-//            }
-//        }
-        
-        do {
-            try authenticationRepository.provideLoginUser(with: self.email, password: self.password)
-            
+        authenticationRepository.provideLoginUser(with: email, password: password) { [weak self] error in
             DispatchQueue.main.async { [weak self] in
                 withAnimation {
                     self?.loginStatus = true
                 }
-            }
-            
-        } catch {
-            DispatchQueue.main.async { [weak self] in
+                
                 self?.isError = true
-                self?.errorMessage = error.localizedDescription
+                self?.errorMessage = (error?.localizedDescription).orEmpty()
             }
         }
     }
     
     private func storeUserData() {
-//        guard let uid = Auth.auth().currentUser?.uid else { return }
-//        let userData = User(id: uid, email: self.email, username: self.username).toJSON()
-//
-//        Firestore.firestore().collection("users")
-//            .document(uid)
-//            .setData(userData) { error in
-//                if let error = error {
-//                    self.isError = true
-//                    self.errorMessage = error.localizedDescription
-//                    print(self.errorMessage)
-//                    return
-//                }
-//
-//                self.isError = false
-//                self.errorMessage = "Successfully store user data"
-//                print(self.errorMessage)
-//            }
-        
-        do {
-            try authenticationRepository.provideStoreUserData(email: self.email, username: self.username)
-            
-        } catch {
+        authenticationRepository.provideStoreUserData(email: email, username: username) { [weak self] error in
             DispatchQueue.main.async { [weak self] in
                 self?.isError = true
-                self?.errorMessage = error.localizedDescription
+                self?.errorMessage = (error?.localizedDescription).orEmpty()
             }
         }
     }

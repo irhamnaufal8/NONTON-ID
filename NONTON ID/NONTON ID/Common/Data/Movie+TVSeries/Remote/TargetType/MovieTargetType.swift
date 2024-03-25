@@ -55,41 +55,6 @@ extension MovieTargetType: NontonIDTargetType, AccessTokenAuthorizable {
     }
     
     var sampleData: Data {
-        switch self {
-        case .getTrendingMovie:
-            let response = TrendingMovie(
-                results: [
-                    Movie(
-                        id: 1,
-                        originalTitle: "Sample Title",
-                        overview: "This is sample title.",
-                        posterPath: "https://image.com/image.jpg"
-                    )
-                ]
-            )
-            return response.toJSONData()
-            
-        case .getMovieDetail(let movieID):
-            let response = Movie(
-                id: movieID,
-                originalTitle: "Sample Title",
-                overview: "This is sample title.",
-                posterPath: "https://image.com/image.jpg"
-            )
-            return response.toJSONData()
-        case .getTrendingTVSeries:
-            let response = TrendingTV(
-                results: [
-                    TVSeries(
-                        id: 1,
-                        name: "Sample Title",
-                        overview: "This is sample title.",
-                        posterPath: "https://image.com/image.jpg",
-                        backdropPath: "https://image.com/image.jpg"
-                    )
-                ]
-            )
-            return response.toJSONData()
-        }
+        return Data()
     }
 }

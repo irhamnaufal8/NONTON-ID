@@ -16,15 +16,15 @@ final class MovieDefaultRemoteDataSource: MovieRemoteDataSource {
         self.provider = provider
     }
     
-    func getTrendingMovie() async throws -> TrendingMovie {
-        try await self.provider.requestAsync(.getTrendingMovie, model: TrendingMovie.self)
+    func getTrendingMovie() async throws -> ArrayResult<Movie> {
+        try await self.provider.requestAsync(.getTrendingMovie, model: ArrayResult<Movie>.self)
     }
     
     func getMovieDetail(by movieId: Int) async throws -> Movie {
         try await self.provider.requestAsync(.getMovieDetail(movieId), model: Movie.self)
     }
     
-    func getTrendingTVSeries() async throws -> TrendingTV {
-        try await self.provider.requestAsync(.getTrendingTVSeries, model: TrendingTV.self)
+    func getTrendingTVSeries() async throws -> ArrayResult<TVSeries> {
+        try await self.provider.requestAsync(.getTrendingTVSeries, model: ArrayResult<TVSeries>.self)
     }
 }

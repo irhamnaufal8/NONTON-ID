@@ -5,8 +5,29 @@
 //  Created by Garry on 24/07/22.
 //
 
+import Combine
 import SwiftUI
 import Firebase
+
+struct CustomUser: Identifiable, Equatable {
+    var id: String = ""
+    var name: String = ""
+}
+
+struct Metadata: Codable {
+    var updatedAt: Date?
+    var createdAt: Date?
+}
+
+struct Response: Identifiable, Equatable, Codable {
+    var id: String = UUID().uuidString
+    var meta: Metadata?
+    var data: User?
+    
+    static func == (lhs: Response, rhs: Response) -> Bool {
+        lhs.id == rhs.id
+    }
+}
 
 final class ProfileViewModel: ObservableObject {
     
@@ -18,6 +39,12 @@ final class ProfileViewModel: ObservableObject {
     @Published var isError = false
     @Published var errorMessage = ""
     @Published var showAlert = false
+    
+    @Published var user: DataState<User> = .hasData(User(id: UUID().uuidString, email: "", username: ""))
+    @Published var anotherUser: DataState<CustomUser> = .hasData(.init())
+    @Published var listUser: DataState<[User]> = .hasData([.init(id: UUID().uuidString), .init(id: UUID().uuidString), .init(id: UUID().uuidString)])
+    
+    @Published var userWithMeta: DataState<Response> = .hasData(Response(meta: .init(), data: .init(id: UUID().uuidString, email: "", username: "")))
     
     func showingAlert() {
         showAlert = true

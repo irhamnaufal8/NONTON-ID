@@ -14,6 +14,9 @@
 		4B7221032B9E1F3D00E19AA5 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7221022B9E1F3D00E19AA5 /* RxMoya */; };
 		4B7221062B9E202800E19AA5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7221052B9E202800E19AA5 /* FirebaseAuth */; };
 		4B7221092B9E215300E19AA5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7221082B9E215300E19AA5 /* FirebaseFirestore */; };
+		4B72210B2B9E2AA800E19AA5 /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72210A2B9E2AA800E19AA5 /* DefaultResponse.swift */; };
+		4B72210D2B9E2E1C00E19AA5 /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72210C2B9E2E1C00E19AA5 /* DataState.swift */; };
+		4B7221102BA0C3C800E19AA5 /* ScreenWidthEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72210F2BA0C3C700E19AA5 /* ScreenWidthEnvironmentKey.swift */; };
 		F6645F78288D9106003A22BD /* TVSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F77288D9106003A22BD /* TVSeries.swift */; };
 		F6645F7B288D989C003A22BD /* TVData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6645F79288D989C003A22BD /* TVData.xcdatamodeld */; };
 		F6645F7E288D9F7D003A22BD /* TVPosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6645F7D288D9F7D003A22BD /* TVPosterView.swift */; };
@@ -87,6 +90,9 @@
 
 /* Begin PBXFileReference section */
 		4B7220F92B9E159E00E19AA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4B72210A2B9E2AA800E19AA5 /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
+		4B72210C2B9E2E1C00E19AA5 /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		4B72210F2BA0C3C700E19AA5 /* ScreenWidthEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenWidthEnvironmentKey.swift; sourceTree = "<group>"; };
 		F6645F77288D9106003A22BD /* TVSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeries.swift; sourceTree = "<group>"; };
 		F6645F7A288D989C003A22BD /* TVData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TVData.xcdatamodel; sourceTree = "<group>"; };
 		F6645F7D288D9F7D003A22BD /* TVPosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPosterView.swift; sourceTree = "<group>"; };
@@ -183,6 +189,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B72210E2BA0C3A800E19AA5 /* ScreenWidth */ = {
+			isa = PBXGroup;
+			children = (
+				4B72210F2BA0C3C700E19AA5 /* ScreenWidthEnvironmentKey.swift */,
+			);
+			path = ScreenWidth;
 			sourceTree = "<group>";
 		};
 		F675A363288BF62A00836AAF /* YourList */ = {
@@ -362,7 +376,7 @@
 			children = (
 				F6AFD3EF288A04AC003F4C62 /* LocalDB */,
 				F6A80A3A2882FE75001449C1 /* Info */,
-				F6A80A042882D130001449C1 /* Model */,
+				F6A80A042882D130001449C1 /* Entities */,
 				F6A80A052882D13C001449C1 /* Data */,
 				F6A80A032882D12A001449C1 /* Extension */,
 				F6A80A062882D141001449C1 /* Component */,
@@ -385,20 +399,22 @@
 		F6A80A032882D12A001449C1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4B72210E2BA0C3A800E19AA5 /* ScreenWidth */,
 				F6A80A262882D7CF001449C1 /* Moya */,
 				F6A80A252882D7C8001449C1 /* Swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		F6A80A042882D130001449C1 /* Model */ = {
+		F6A80A042882D130001449C1 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				F6645F77288D9106003A22BD /* TVSeries.swift */,
 				F6AFD3BF28880F82003F4C62 /* Movie.swift */,
 				F6A80A4128832722001449C1 /* User.swift */,
+				4B72210A2B9E2AA800E19AA5 /* DefaultResponse.swift */,
 			);
-			path = Model;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		F6A80A052882D13C001449C1 /* Data */ = {
@@ -574,6 +590,7 @@
 			isa = PBXGroup;
 			children = (
 				F6AFD3D428881BEF003F4C62 /* TargetType */,
+				4B72210C2B9E2E1C00E19AA5 /* DataState.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -833,6 +850,7 @@
 				4B7220FA2B9E159E00E19AA5 /* Constants.swift in Sources */,
 				F675A37B288C7E2700836AAF /* ProfileViewModel.swift in Sources */,
 				F6A80A4828833438001449C1 /* HomeViewModel.swift in Sources */,
+				4B7221102BA0C3C800E19AA5 /* ScreenWidthEnvironmentKey.swift in Sources */,
 				F6AFD3C028880F82003F4C62 /* Movie.swift in Sources */,
 				F6A80A282882D802001449C1 /* Color+Default.swift in Sources */,
 				F6AFD3F6288A0635003F4C62 /* MovieLocalDataSource.swift in Sources */,
@@ -848,6 +866,7 @@
 				F6AFD406288AB6C7003F4C62 /* MovieDetailView.swift in Sources */,
 				F6A80A172882D297001449C1 /* LocalizableText.swift in Sources */,
 				F6645F84288DA26E003A22BD /* TVCardViewModel.swift in Sources */,
+				4B72210D2B9E2E1C00E19AA5 /* DataState.swift in Sources */,
 				F6645F7E288D9F7D003A22BD /* TVPosterView.swift in Sources */,
 				F6AFD3DE2888ECC0003F4C62 /* MovieDefaultRemoteDataSource.swift in Sources */,
 				F6A80A242882D74D001449C1 /* LoginViewModel.swift in Sources */,
@@ -855,6 +874,7 @@
 				F6AFD3EB28898A87003F4C62 /* MoviePosterViewModel.swift in Sources */,
 				F6A80A4428832FB8001449C1 /* Encodable+toJSON.swift in Sources */,
 				F6AFD3F4288A0531003F4C62 /* MovieData.xcdatamodeld in Sources */,
+				4B72210B2B9E2AA800E19AA5 /* DefaultResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

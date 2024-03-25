@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AuthenticationRepository {
-    func provideCreateUser(with email: String, password: String) throws
-    func provideLoginUser(with email: String, password: String) throws
-    func provideStoreUserData(email: String, username: String) throws
+    func provideCreateUser(with email: String, password: String, completion: @escaping (Error?) -> Void)
+    func provideLoginUser(with email: String, password: String, completion: @escaping (Error?) -> Void)
+    func provideStoreUserData(email: String, username: String, completion: @escaping (Error?) -> Void)
 }

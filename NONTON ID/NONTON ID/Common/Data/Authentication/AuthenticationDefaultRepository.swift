@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Firebase
 
 final class AuthenticationDefaultRepository: AuthenticationRepository {
     private let remote: AuthenticationRemoteDataSource
@@ -17,15 +16,19 @@ final class AuthenticationDefaultRepository: AuthenticationRepository {
         self.remote = remote
     }
     
-    func provideCreateUser(with email: String, password: String) throws {
-        try self.remote.createUser(with: email, password: password)
+    func provideCreateUser(with email: String, password: String, completion: @escaping (Error?) -> Void) {
+        remote.createUser(with: email, password: password) { _, error in
+            completion(error)
+        }
     }
     
-    func provideLoginUser(with email: String, password: String) throws {
-        try self.remote.loginUser(with: email, password: password)
+    func provideLoginUser(with email: String, password: String, completion: @escaping (Error?) -> Void) {
+        remote.loginUser(with: email, password: password) { _, error in
+            completion(error)
+        }
     }
     
-    func provideStoreUserData(email: String, username: String) throws {
-        try self.remote.storeUserData(email: email, username: username)
+    func provideStoreUserData(email: String, username: String, completion: @escaping (Error?) -> Void) {
+        remote.storeUserData(email: email, username: username, completion: completion)
     }
 }

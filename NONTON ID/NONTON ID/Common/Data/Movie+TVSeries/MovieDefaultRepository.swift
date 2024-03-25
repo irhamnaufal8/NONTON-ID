@@ -20,7 +20,7 @@ final class MovieDefaultRepository: MovieRepository {
         self.local = local
     }
     
-    func provideGetTrendingMovie() async throws -> TrendingMovie {
+    func provideGetTrendingMovie() async throws -> ArrayResult<Movie> {
         try await self.remote.getTrendingMovie()
     }
     
@@ -28,7 +28,7 @@ final class MovieDefaultRepository: MovieRepository {
         try await self.remote.getMovieDetail(by: movieId)
     }
     
-    func provideGetTrendingTVSeries() async throws -> TrendingTV {
+    func provideGetTrendingTVSeries() async throws -> ArrayResult<TVSeries> {
         try await self.remote.getTrendingTVSeries()
     }
     

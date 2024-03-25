@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Firebase
 
 protocol AuthenticationRemoteDataSource {
-    func createUser(with email: String, password: String) throws
-    func loginUser(with email: String, password: String) throws
-    func storeUserData(email: String, username: String) throws
+    func createUser(with email: String, password: String, completion: @escaping (AuthDataResult?, Error?) -> Void)
+    func loginUser(with email: String, password: String, completion: @escaping (AuthDataResult?, Error?) -> Void)
+    func storeUserData(email: String, username: String, completion: @escaping (Error?) -> Void)
 }
